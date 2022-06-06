@@ -564,7 +564,8 @@ aside .aside-items .tags .screenshot {
   color: #FFFFFF;
 }
 
-.prices .pay span, .prices .pay img {
+.prices .pay span,
+.prices .pay img {
   margin: 0 8px;
 }
 
@@ -612,7 +613,6 @@ aside .aside-items .tags .screenshot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 3fr;
   grid-template-rows: 1fr 1fr;
-  grid-column-gap: 35px;
 }
 
 .footer .footer__items .footer__item {
@@ -624,33 +624,32 @@ aside .aside-items .tags .screenshot {
   align-items: flex-start;
   color: #889099;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .footer .footer__items .footer__item a {
   margin-bottom: 15px;
   text-decoration: none;
   color: #889099;
-  font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .footer .footer__items .footer__item a:first-child {
   color: #323642;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.2em;
   margin-bottom: 20px;
 }
 
 .footer .footer__items .footer__item p {
-  font-size: 1.2em;
-  font-weight: 500;
-  margin-bottom: 12px;
+  font-weight: 400;
+  margin-bottom: 36px;
+  line-height: 22px;
 }
 
 .footer .footer__items .footer__item .info {
-  font-size: 1em;
+  font-size: 0.9em;
+  line-height: 16px;
 }
 
 .footer .footer__items .learn {
@@ -663,14 +662,11 @@ aside .aside-items .tags .screenshot {
 .footer .footer__items .social {
   grid-column-start: 4;
   grid-row-start: 2;
-  margin-top: 0;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: end;
-}
-
-.footer .footer__items .social a {
-  margin-right: 30px;
+  padding-top: 125px;
 }
 
 .footer .footer__items .company {
