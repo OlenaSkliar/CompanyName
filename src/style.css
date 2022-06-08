@@ -236,6 +236,10 @@ body {
   margin-top: 40px;
 }
 
+.content .search-mob {
+  display: none;
+}
+
 .content .posts {
   border-right: 1px solid #EBECED;
   width: 70%;
@@ -426,6 +430,10 @@ aside .aside-items .tags .screenshot {
   font-size: 4em;
   color: #FFFFFF;
   text-align: center;
+}
+
+.prices .h2-mob {
+  display: none;
 }
 
 .prices .prices__cards {
@@ -925,10 +933,15 @@ aside .aside-items .tags .screenshot {
     letter-spacing: 0.8px;
   }
 
+  .footer {
+    padding: 44px 20px 50px;
+    width: 375px;
+  }
+
   .footer .footer__items {
     width: 375px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 400px;
   }
 
   .footer .footer__items .company {
@@ -936,18 +949,42 @@ aside .aside-items .tags .screenshot {
     grid-row-end: 3;
   }
 
+  .footer .footer__items .programs {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
   .footer .footer__items .learn {
     grid-column-start: 2;
     grid-row-start: 2;
   }
 
+  .footer .footer__items .legal {
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
   .footer .footer__items .about {
     grid-column-start: 1;
-    grid-row-start: 4;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    margin-top: 290px;
   }
 
   .footer .footer__items .social {
     grid-column-start: 2;
     grid-row-start: 3;
+    justify-content: flex-start;
+    margin-top: 58px;
+  }
+
+  .footer .footer__items .social div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer .footer__items .social div a {
+    margin-right: 38px;
   }
 }
