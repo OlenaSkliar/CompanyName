@@ -686,13 +686,13 @@ aside .aside-items .tags .screenshot {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   body {
-    width: 375px;
+    min-width: 768px;
   }
 
   body .header-wrapper {
-    width: 375px;
+    width: 768px;
     margin: auto;
   }
 
@@ -733,7 +733,7 @@ aside .aside-items .tags .screenshot {
   }
 
   body .header {
-    width: 375px;
+    width: 768px;
     padding: 15px 11px;
     display: flex;
     align-items: center;
@@ -754,7 +754,7 @@ aside .aside-items .tags .screenshot {
   body .posts__item {
     margin: auto;
     flex-direction: column;
-    width: 335px;
+    width: 728px;
     margin-top: 30px;
   }
 
@@ -783,7 +783,7 @@ aside .aside-items .tags .screenshot {
 
   body .content {
     flex-direction: column;
-    width: 375px;
+    width: 768px;
     padding: 0 30px;
   }
 
@@ -796,7 +796,7 @@ aside .aside-items .tags .screenshot {
   body .content .posts .posts__items .posts__item .item__image {
     background: url(img/bg-header.png);
     background-size: cover;
-    width: 315px;
+    width: 708px;
     height: 200px;
   }
 
@@ -820,7 +820,7 @@ aside .aside-items .tags .screenshot {
 
   body .content .posts .olderPosts {
     padding: 0;
-    width: 315px;
+    width: 708px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -861,11 +861,11 @@ aside .aside-items .tags .screenshot {
   }
 
   aside .aside-items {
-    width: 315px;
+    width: 708px;
   }
 
   .prices {
-    width: 375px;
+    width: 768px;
     padding: 60px 30px 40px;
   }
 
@@ -890,6 +890,18 @@ aside .aside-items .tags .screenshot {
     margin: 0;
     margin-bottom: 20px;
     width: auto;
+  }
+
+  .prices .prices__cards .prices__card .price {
+    text-align: center;
+  }
+
+  .prices .prices__cards .prices__card .price:before {
+    left: 240px;
+  }
+
+  .prices .prices__cards .prices__card .price:after {
+    right: 185px;
   }
 
   .prices .prices__cards .prices__card:nth-child(2) {
@@ -932,11 +944,11 @@ aside .aside-items .tags .screenshot {
 
   .footer {
     padding: 44px 20px 50px;
-    width: 375px;
+    width: 768px;
   }
 
   .footer .footer__items {
-    width: 375px;
+    width: 768px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px 200px 400px;
   }
@@ -973,6 +985,7 @@ aside .aside-items .tags .screenshot {
     grid-row-start: 3;
     justify-content: flex-start;
     margin-top: 58px;
+    padding-top: 0;
   }
 
   .footer .footer__items .social div {
@@ -983,5 +996,42 @@ aside .aside-items .tags .screenshot {
 
   .footer .footer__items .social div a {
     margin-right: 38px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    min-width: 375px;
+  }
+
+  body .header-wrapper {
+    width: 375px;
+  }
+
+  body .header {
+    width: 375px;
+  }
+
+  body .posts__item {
+    width: 375px;
+  }
+
+  body .content {
+    width: 375px;
+  }
+
+  body aside .aside-items {
+    width: 315px;
+  }
+
+  body .prices {
+    width: 375px;
+  }
+
+  body .footer {
+    width: 375px;
+  }
+
+  body .footer .footer__items {
+    width: 375px;
   }
 }
